@@ -3,89 +3,289 @@ version: "3.0"
 nlu:
 - intent: greet
   examples: |
-    - hey
+    - Hola
+    - Buen día
+    - Que gusto de leerte
+    - Tanto tiempo sin leerte
+    - qué onda
+    - que onda
+    - ¿Quién eres?
+    - Cómo te llamas
+    - Buenas tardes
+    - Buenos días
+    - Buenas noches
+    - ¿Qué tal?
     - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
+    - Hasta luego
+    - Hasta pronto
+    - Hasta la próxima
+    - Hasta siempre
+    - ahí te ves
+    - Te leo después
+    - Éxito en tus proyectos
+    - Buena suerte
+    - Adiós
+    - Nos leemos
+    - Te leo luego
     - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
+    - byebye
+    - Hasta la vista
 - intent: affirm
   examples: |
+    - sí
+    - sí claro
+    - claro que sí
+    - afirmativo
+    - así es
+    - sin duda
+    - exacto
+    - cierto
+    - simon
+    - va
+    - dale
+    - por supuesto
+    - sí wey
+    - ajá
     - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
+    - vava
+    - vavava
+    - va va
+    - va va va
+    - ok
+    - okay
+    - okas
 - intent: deny
   examples: |
     - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
+    - claro que no
+    - para nada
+    - negativo
+    - de ninguna manera
+    - nel
+    - nah
+    - nelson
+- intent: thank
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
+    - Muchas gracias
+    - Gracias
+    - gracias    
+    - gracias Archybot
+    - Muchas gracias archybot
+    - ¡Gracias!
+    - Gracias
+    - Gracias bot
+    - Gracias por eso
+    - ¡Gracias!
+    - increíble, gracias
+    - genial, gracias
+    - Genial, gracias
+    - danke
+    - muchas gracias
+    - OK gracias
+    - ok gracias archybot
+    - ¡OK gracias!
+    - Perfecto, gracias
+    - gracias de todos modos
+    - Gracias
+    - muchas gracias por todo
+    - muchas gracias
+    - gracias por la ayuda
+    - si gracias
+    - sí gracias    
+    - gracias por tu información
+- intent: react_negative
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
+    - Me siento mal
+    - Estoy triste
+    - estoy súper triste
+    - Estoy triste
+    - estoy súper triste
+    - Ahora estoy triste
+    - Esto es malo
+    - Eres bastante malo
+    - malo
+    - chico malo
+    - chiste de mierda
+    - la documentación de rasa es muy mala
+    - estoy enojado por ti
+    - me siento triste
+    - estoy triste
+    - estoy triste por eso
+    - Estoy muy triste
+    - me siento triste
+    - estoy triste
+    - Estoy triste
+    - rasa es malo
+    - triste
+    - muy triste
+    - muy triste :(
+    - muy triste
+    - tú rompiste mi corazón
+    - muy muy triste
+    - eres malo
+    - eres un bot malo
+    - usted me hace triste
+    - Estás loco
+    - Usted es grosero
+    - los bots son malos
+    - ¡¡¡¡no me importa!!!!
+    - no me gustan los bots
+    - esta es una experiencia realmente frustrante
+    - eres bastante aburrido
+    - estoy tan preocupada
+    - me iré
+    - Aunque entiendo que todavía está en desarrollo, me siento un poco decepcionado.
+    - Seguro que no eres tan listo como pensaba
+    - No me siento bien
+    - no es bueno
+    - Eso es tan grosero
+    - desafortunadamente
+    - Esa herramienta aquí no es buena.
+    - aburrido
+- intent: react_positive
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Cool
+    - cool
+    - cool :)
+    - cool!
+    - coolio
+    - :)
+    - :D
+    - JA JA
+    - Yo estoy feliz
+    - JAJAJA
+    - Jajaja
+    - Jaja eso es divertido
+    - Se ve bien
+    - WOW
+    - Wow
+    - Eres genial
+    - Eres lindo.
+    - Eres agradable.
+    - Eres realmente genial
+    - jajaja
+    - ja ja
+    - ja ja
+    - jaja
+    - jajaja
+    - contento
+    - Me estoy sintiendo feliz
+    - Estoy feliz
+    - hoy estoy feliz
+    - estoy muy contento con tu respuesta
+    - te quiero
+    - es genial
+    - jajaja
+    - te amo
+    - está bien Archybot, eres genial
+    - Archybot es increíble
+    - una gran demostración
+    - eso es gracioso
+    - fue una gran interacción
+    - Es gracioso
+    - hoy fue un buen día
+    - ¡Eres un robot fregón!
+    - usted es maravilloso
+    - eres genial
+    - eres genial hombre
+    - lo estás haciendo muy bien
+    - eres Gracioso
+    - eres genial
+    - Tú eres mi nuevo mejor amigo
+    - te ves muy bien :D
+    - Me gustas
+    - Te amo
+    - eres muy inteligente
+    - me gusta archybot
+    - jeje
+    - como tu
+    - eres muy inteligente
+    - Eso es genial.
+    - Entiendo
+    - eres bueno
+    - Gran información
+    - Quiero decir que me gustó la explicacion
+    - ¡Súper! me encanta archybot
+- intent: how_to_get_started
+  examples: |
+    - Ayuda
+    - ayuda
+    - ¿Puedes ayudarme a diseñar una arquitectura?
+    - ¿Puedes decirme cómo diseñar una arquitectura?
+    - Quiero diseñar una arquitectura de software
+    - Ayudame a empezar
+    - Ayudame a estudiar
+    - ¿Cómo puedo empezar?
+    - ¿Cómo comienzo?
+    - ¿Cómo empiezo?
+    - Me gustaría diseñar una arquitectura
+    - Quiero diseñar una arquitectura
+    - Quiero saber como empezar con Archybot
+    - Empecemos con lo básico
+    - Por favor, dime cómo empezar
+    - Por favor, dime como empezar con Archybot
+    - Muestrame recursos de aprendizaje
+    - ayudame por favor 
+    - que sabes hacer
+    - Qué sabes hacer?
+- intent: why_design
+  examples: |
+    - ¿Por qué es importante diseñar?
+    - ¿Para qué diseñar software?
+    - Dime una razón para diseñar software
+    - ¿Por qué es útil saber de diseño de software?
+    - ¿Cuál es el propósito de diseñar?
+- intent: single_solution
+  examples: |
+    - ¿Existe una sola solución a un problema?
+    - ¿Existe una sola solución a un problema de diseño?
+    - ¿Hay una única solución a un problema de diseño?
+- intent: ask_designer_skills
+  examples: |
+    - ¿Qué características debe tener un diseñador excepcional?
+    - ¿Cuáles son las características debe tener un diseñador?
+    - ¿Qué es lo que caracteriza a un diseñador de software?
+    - Dime las características de un buen diseñador
+    - dime las caracteristicas de un buen diseñador de software
+- intent: why_software_architecture
+  examples: |
+    - ¿Por qué es importante la arquitectura de software?
+    - ¿Por qué necesito saber de arquitecturas de software?
+    - ¿Por qué debería interesarme el curso de diseño?
+    - Dame una razón para estudiar las arquitecturas de software
+    - ¿Por qué es útil saber de arquitecturas de software?
+    - ¿Cuál es el propósito de una arquitectura de software?
+- intent: ask_quality_attribute
+  examples: |
+    - ¿Qué es un atributo de calidad?
+    - Define qué es un atributo de calidad
+    - Dime qué es un atributo de calidad
+    - Describe que es un atributo de calidad
+    - Explica que es un atributo de calidad
+    - Aclara que es un atributo de calidad
+- intent: ask_reference_architecture
+  examples: |
+    - ¿Qué es una arquitectura de referencia?
+    - ¿Para que sirve una arquitectura de referencia?
+    - Dime que es una arquitectura de referencia
+    - ¿Cuál es la utilidad de una arquitctura de referencia?
+    - Explica que es una arquitectura de referencia
+- intent: ask_security_tactics
+  examples: |
+    - ¿Cómo puedo detectar ataques?
+    - ¿Cómo se puede resistir a un ataque?
+    - ¿Cómo se puede reacionar a un ataque?
+    - ¿Cómo te puedes recuperar tras un ataque?
+
+- intent: ask_usability_tactics
+  examples: |
+    - ¿Qué tipo de tácticas se puedan usar para la usabilidad?
+    - Dime los tipos de tácticas para usabilidad
+    - ¿Cómo se clasifican las tácticas de usabilidad?
+
+- synonym: Patrón arquitectónico
+  examples: |
+    - Estilo arquitectónico
+    - Patrón de diseño arquitectónico

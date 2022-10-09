@@ -5,30 +5,129 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - react_positive
+  - react_negative
+  - single_solution
+  - how_to_get_started
+  - thank
+  - why_design
+  - why_software_architecture
+  - ask_designer_skills
+  - ask_quality_attribute
+  - ask_reference_architecture
+  - ask_security_tactics
+  - ask_usability_tactics
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: |
+        Hola, mi nombre es Archybot🤖.
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+        Te puedo ayudar a:
+        1. Resolver dudas comunes del curso.
+        2. Diseñar una arquitectura de software.
+        
+        Si no sabes qué hacer, puedes pedirme ayuda escribiendo Ayuda en el chat.
+    - text: |
+        ¡Hola, soy Archybot🤖!
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+        Te puedo ayudar a:
+        1. Resolver dudas comunes del curso.
+        2. Diseñar una arquitectura de software.
 
-  utter_happy:
-  - text: "Great, carry on!"
+        Si no sabes qué hacer, puedes pedirme ayuda escribiendo Ayuda en el chat.
+    - text: |
+        ¡Hola! Mi nombre es Archybot🤖.
 
+        Te puedo ayudar a:
+        1. Resolver dudas comunes del curso.
+        2. Diseñar una arquitectura de software.
+
+        Si no sabes qué hacer, puedes pedirme ayuda escribiendo Ayuda en el chat.
   utter_goodbye:
-  - text: "Bye"
+    - text: "Adiós :("
+  utter_react_negative:
+    - text: 😕
+    - text: 😞
+    - text: 😥
+    - text: 😢
+  utter_react_positive:
+    - text: 😄
+    - text: 😊
+    - text: 👏
+    - text: 😍
+  utter_default:
+    - text: "Lo siento, no entendí eso 🤷 ¿puedes reformular?"
+    - text: No entendí 🤷 ¿podrías reformular eso?
+    - text: Lo siento, pero no te entendí 🤷 ¿Podrías reformular lo que acaba de decir?
+    - text: Me temo que no entendí lo que acabas de decir 🤷 ¿Podrías reformular eso?
+    - text: No entendí bien eso 🤷 ¿podrías reformular tu mensaje?
+    - text: ¿Podrías reformular su mensaje? No lo entendí, lo siento 🤷    
+  utter_get_started:
+    - text: | 
+        Soy un asistente de profesor y te puedo ayudar en los siguientes temas:
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+        - Fundamentos de arquitectura de software
+        - Atributos de calidad
+        - Requisitos arquitectónicamente significativos
+        - Conceptos de diseño arquitectónicos
+        - Diseño de una arquitectura de software
+        - Documentación de una arquitectura de software
+
+        ¿Qué te interesa?
+  utter_noworries:
+    - text: ¡No te preocupes! 🤙
+    - text: No hay problema 🤙
+    - text: Estoy feliz de ayudar 😎
+    - text: Aquí estaré para lo que necesites 😎
+  utter_anything_else:
+    - text: ¿Hay algo más en lo que pueda ayudarte?
+  utter_ask_more:
+    - text: ¿Te gustaría saber más?
+  utter_ask_quality_attribute:
+    - text: |
+        Es una dimensión de calidad utilizada para evaluar un sistema de software.
+        Es una propiedad medible o comprobable de un sistema que se utiliza para indicar qué tan bien el sistema satisface las necesidades de los interesados más allá de la función básica del sistema.
+  utter_quality_attribute_list:
+    - text: |
+        Existe una gran variedad. Los más se repiten en la práctica son: 
+        - Disponibilidad (Availability)
+        - Eficiencia energética (Energy Efficiency)
+        - Facilidad de despliegue (Deployability)        
+        - Facilidad de integración (Integrability)
+        - Facilidad de prueba (Testability)
+        - Interoperabilidad (Interoperabilidad)
+        - Modificabilidad (Modifiability)
+        - Protección (Safety)
+        - Rendimiento (Performance)
+        - Seguridad (Security)
+        - Usabilidad (Usability)
+  utter_why_design:
+    - text: Para producir una solución viable a un problema dado.
+  utter_why_software_architecture:
+    - text: La arquitectura es un puente entre los objetivos de negocio de una organización y el sistema de software final.
+  utter_why_software_architecture_fairbanks:
+    - text: Es una arma para abordar la complejidad en los sistemas de software. Ayuda a particionar el software, proporciona conocimientos que ayudan a diseñarlo mejor y proporciona abstracciones que ayudan a razonar sobre el software.
+  utter_single_solution:
+    - text: Rara vez... casi nunca 😬
+  utter_single_solution_why:
+    - text: |
+        Las razones por las que no existe UNA solución a la mayoría de los problemas son:
+        1. No existe una única medida de calidad.
+        2. Diferentes factores y restricciones que deben considerarse al elegir una solución.
+        3. Ningún proceso garantiza que podamos incluso identificar una solución aceptable.
+  utter_designer_skills:
+    - text: |
+        1. Familiaridad con el dominio de la aplicación.
+        2. Habilidad para comunicar la visión técnica a otros miembros del proyecto.
+        3. Identificación con el desempeño del proyecto. 
+  utter_explain_reference_architecture:
+    - text: Son modelos que proporcionan una estructura lógica general para un tipo particular de aplicación o dominio. Se mapean a uno o más patrones arquitectónicos. Se han probado en contextos técnicos y de negocio. Suelen venir con un conjunto de artefactos de apoyo que facilitan su uso.
+  utter_security_tactics:
+    - text: "Detectar ataques, Resistir ataques, Reaccionar a ataques y Recuperarse de ataques"
+  utter_usability_tactics:
+    - text: "Dar soporte a la iniciativa del usuario y Dar soporte a la iniciativa el sistema"
 
 session_config:
-  session_expiration_time: 60
+  session_expiration_time: 60 # value in minutes
   carry_over_slots_to_new_session: true

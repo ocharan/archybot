@@ -1,30 +1,80 @@
 version: "3.0"
 
 stories:
-
-- story: happy path
+- story: greet
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
+- story: goodbye
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: goodbye
   - action: utter_goodbye
+- story: positive reaction
+  steps:
+  - intent: react_positive
+  - action: utter_react_positive
+- story: negative reaction
+  steps:
+  - intent: react_negative
+  - action: utter_react_negative
+- story: how to get started
+  steps:
+  - intent: how_to_get_started
+  - action: utter_get_started
+- story: why software architecture  
+  steps:
+  - intent: why_software_architecture
+  - action: utter_why_software_architecture
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_why_software_architecture_fairbanks
+  - intent: thank
+  - action: utter_noworries
+  - action: utter_anything_else  
+- story: why design
+  steps:
+  - intent: why_design
+  - action: utter_why_design  
+- story: single solution + why
+  steps:
+  - intent: single_solution 
+  - action: utter_single_solution
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_single_solution_why
+  - intent: thank
+  - action: utter_noworries
+  - action: utter_anything_else  
+- story: single solution + not why
+  steps:
+  - intent: single_solution 
+  - action: utter_single_solution
+  - action: utter_ask_more
+  - intent: deny
+  - action: utter_noworries
+- story: designer skills
+  steps:
+  - intent: ask_designer_skills
+  - action: utter_designer_skills
+- story: quality attribute
+  steps:
+  - intent: ask_quality_attribute
+  - action: utter_ask_quality_attribute
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_quality_attribute_list
+  - intent: thank
+  - action: utter_noworries
+  - action: utter_anything_else
+- story: reference_architecture
+  steps:
+  - intent: ask_reference_architecture
+  - action: utter_explain_reference_architecture
+- story: ask_security_tactics
+  steps:
+  - intent: ask_security_tactics
+  - action: utter_security_tactics
+- story: ask_usability_tactics_types
+  steps:
+    - intent: ask_usability_tactics
+    - action: utter_usability_tactics
