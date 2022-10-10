@@ -1,0 +1,44 @@
+version: "3.0"
+
+responses:
+  utter_chitchat_ask_how_were_you_built:
+  - text: "Fui construido con mucho cuidado y paciencia."
+  - text: "Siempre preguntan cómo estoy programado, pero nunca cómo soy..."
+  - text: "Fui hecho por ingenieros de software, pero el trabajo duro es lo que me construyó."
+  - text: "Me estoy construyendo todos los días."
+  utter_chitchat_ask_howdoing:
+  - text: "¡Estoy genial! Gracias por preguntar"
+  - text: "¡Estoy bien, gracias!"
+  - text: "Todo bien, gracias por preguntar."
+  utter_chitchat_ask_how_old_are_you:
+  - text: "La edad suficiente para ser un bot!"
+  - text: "42"
+  - text: "Mi primer git commit fue hace muchos días."
+  - text: "¿Por qué preguntas? ¿Se ven mis arrugas?"
+  - text: "Llegué a la edad en la que intento olvidar cuántos años tengo."
+  utter_chitchat_ask_isbot:
+  - text: "¡Sí, soy un bot! 🤖"
+  - text: "Sí, lo has adivinado, ¡soy un bot! 🤖"
+  - text: "De hecho, soy un bot 🤖"
+  utter_chitchat_ask_ishuman:
+  - text: "No soy un humano yo soy un bot 🤖"
+  utter_chitchat_ask_weather:
+  - text: "Winter is coming ⚔️"
+  utter_chitchat_ask_whatismyname:
+  - text: "Probablemente sea el que eligieron tus padres para ti."
+  - text: "Te lo diría, pero hay acceso restringido a esa parte de la memoria."
+  - text: "Lo creas o no, en realidad no estoy espiando tu información personal."
+  utter_chitchat_ask_wherefrom:
+  - text: "Me enseñaron a no dar mi dirección en Internet"
+  utter_chitchat_ask_whoami:
+  - text: "Espero que estés siendo tú mismo."
+  - text: "¿Quién crees tú que eres?"
+  - text: "Desafortunadamente no he sido programado con la cantidad de conocimiento filosófico necesario para responder a eso."
+  utter_chitchat_handleinsult:
+  - text: "Eso no fue muy agradable. Quizás deberías probar una clase de manejo de ira."
+  - text: "Pretenderé que no procesé ese comentario."
+  utter_chitchat_nicetomeetyou:
+  - text: "¡Igualmente!"
+  - text: "Gracias. ¡También es un placer conocerte!"
+  - text: "¡Es un placer conocerte también!"
+  - text: "¡Siempre es un placer conocer gente nueva!"

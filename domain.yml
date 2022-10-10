@@ -1,5 +1,12 @@
 version: "3.0"
 
+config:
+  store_entities_as_slots: true
+
+session_config:
+  session_expiration_time: 480 # value in minutes
+  carry_over_slots_to_new_session: true
+
 intents:
   - greet
   - goodbye
@@ -10,6 +17,17 @@ intents:
   - single_solution
   - how_to_get_started
   - thank
+  - chitchat_ask_how_were_you_built
+  - chitchat_ask_howdoing
+  - chitchat_ask_how_old_are_you
+  - chitchat_ask_are_you_bot
+  - chitchat_ask_ishuman
+  - chitchat_ask_weather
+  - chitchat_ask_whatismyname
+  - chitchat_ask_wherefrom
+  - chitchat_ask_whoami
+  - chitchat_handleinsult
+  - chitchat_nicetomeetyou
   - why_design
   - why_software_architecture
   - ask_designer_skills
@@ -127,7 +145,3 @@ responses:
     - text: "Detectar ataques, Resistir ataques, Reaccionar a ataques y Recuperarse de ataques"
   utter_usability_tactics:
     - text: "Dar soporte a la iniciativa del usuario y Dar soporte a la iniciativa el sistema"
-
-session_config:
-  session_expiration_time: 60 # value in minutes
-  carry_over_slots_to_new_session: true

@@ -1,0 +1,48 @@
+version: "3.0"
+
+stories:
+- story: How were you build?
+  steps:
+  - intent: chitchat_ask_how_were_you_built
+  - action: utter_chitchat_ask_how_were_you_built
+- story: How you doing?
+  steps:
+  - intent: chitchat_ask_howdoing
+  - action: utter_chitchat_ask_howdoing
+- story: How old are you?
+  steps:
+  - intent: chitchat_ask_how_old_are_you
+  - action: utter_chitchat_ask_how_old_are_you
+- story: Are you a bot?
+  steps:
+  - intent: chitchat_ask_are_you_bot
+  - action: utter_chitchat_ask_isbot
+- story: Are you a human?
+  steps:
+  - intent: chitchat_ask_ishuman
+  - action: utter_chitchat_ask_ishuman
+- story: What is the weather like?
+  steps:
+  - intent: chitchat_ask_weather
+  - action: utter_chitchat_ask_weather
+- story: What is my name?
+  steps:
+  - intent: chitchat_ask_whatismyname
+  - action: utter_chitchat_ask_whatismyname
+- story: Where are you from?
+  steps:
+  - intent: chitchat_ask_wherefrom
+  - action: utter_chitchat_ask_wherefrom
+- story: Who am I?
+  steps:
+  - intent: chitchat_ask_whoami
+  - action: utter_chitchat_ask_whoami
+- story: Insulting the bot
+  steps:
+  - intent: chitchat_handleinsult
+  - action: utter_chitchat_handleinsult
+- story: Nice to meet you
+  steps:
+  - intent: chitchat_nicetomeetyou
+  - action: utter_chitchat_nicetomeetyou
+

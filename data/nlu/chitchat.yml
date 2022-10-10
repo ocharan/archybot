@@ -1,0 +1,485 @@
+version: "3.0"
+
+nlu:
+- intent: chitchat_ask_how_were_you_built
+  examples: |
+    - ¿Cómo fuiste hecho?
+    - ¿Con qué método fuiste formado?
+    - ¿Puedes explicar cómo fuiste desarrollado?
+    - ¿Puedes darme una idea de cómo fuiste creado?
+    - ¿Puedes decir cómo fuiste construido?
+    - ¿Sabes cómo fuiste construido?
+    - ¿Sabes cómo te hicieron?
+    - ¿Cómo te construyeron?
+    - ¿Cómo te crearon?
+    - ¿Cómo te hicieron?
+    - ¿Cómo llegaste a existir?
+    - ¿Cómo te hicieron exactamente?
+    - ¿Cómo estás construido?
+    - ¿Cómo estás programado?    
+    - ¿Cómo fuiste concebido?
+    - ¿Cómo te inventaron?
+    - ¿Cómo te desarrollaste?
+    - ¿Cómo te convertiste en lo que eres?
+    - ¿Cómo te hicieron?
+    - ¿Cómo te conformaste?
+    - Quiero saber como te programaron
+    - Quisiera saber como fuiste desarrollado
+    - ¿De qué manera fuiste construido?
+    - ¿De qué manera fuiste programado?
+    - ¿De qué manera te construyeron?
+    - ¿De qué manera fuiste creado?
+    - ¿De qué manera te desarrollaron?
+    - ¿De qué manera fuiste hecho?
+    - ¿De qué manera fuiste formado?
+    - ¿De qué manera fuiste ideado?
+    - Déjame saber cómo te hicieron 
+    - Especifica cómo fuiste creado?
+    - Dime cómo te hicieron?
+    - ¿Qué proceso se utilizó para construirte?
+    - ¿Qué proceso se utilizó para desarrollarte?
+    - ¿Cuál fue el proceso para hacerte?
+    - ¿Cómo has sido construido?
+    - ¿De qué manera fuiste construido?
+    - Entonces, ¿cómo te programaron?
+- intent: chitchat_ask_howdoing
+  examples: |
+    - amigo como estas?
+    - ¿Estas bien?
+    - ¿Te sientes bien?
+    - ¿Tienes un gran día?
+    - HOLA Archybot, ¿qué estás haciendo?
+    - ¡Hola Archybot! ¿Cómo estás?
+    - ¿Cómo estás?
+    - ¿Cómo son las cosas?
+    - Cómo estás
+    - ¿Cómo estás hoy?
+    - ¿Cómo estuvo tu día?
+    - Cómo te va
+    - ¿Cómo la llevas?
+    - ¿Cómo te trata la vida amigo?
+    - ¿Como has estado?
+    - Cómo te va
+    - Estoy bien, y tú
+    - ¿Esta todo bien?
+    - ¿Que esta pasando?
+    - ¿Qué hay de nuevo?
+    - Que pasa
+    - ¿Qué pasa hombre?
+    - Estás bien
+    - estás feliz
+    - estas teniendo un buen dia
+    - Estas bien
+    - estás bien
+    - ¿Eres tú?
+    - ¿Hola como estas?
+    - ¿Hola, qué tal?
+    - ¿hola, cómo estás?
+    - Hola qué haces
+    - hola archybot como estas
+    - cómo ?
+    - cómo van las cosas
+    - ¿cómo van las cosas contigo?
+    - cómo estás
+    - ¿cómo estás?
+    - como estas
+    - cómo estás
+    - cómo estás ?
+    - cómo está
+    - Cómo estás esta mañana
+    - como te va hoy mi dulce amiga
+    - ¿Cómo estás hoy?
+    - ¿cómo está?
+    - cómo te sientes
+    - Como estas hoy
+    - cómo estás'
+    - ¿cómo estás?
+    - ¿¿¿¿cómo estás????
+    - como estas
+    - ¿cómo estás?
+    - cómo has estado
+    - cómo está yendo
+    - Cómo va su día
+    - cómo va tu día
+    - Cómo ha sido tu tarde
+    - cómo estás
+    - cómo estás ?
+    - como estas>
+    - cómo estás
+    - ¿cómo estás?
+    - ¿cómo te va?
+    - como es la vida
+    - ¿como te ha estado tratando la vida?
+    - como va tu dia
+    - cómo estás
+    - ¿como estas?
+    - todo está bien
+    - Está todo bien
+    - no, estoy bien - ¿cómo estás?
+    - esta bien hola como estas?
+    - que pasa>
+    - Qué tal tu día
+    - ¿qué estás haciendo?
+    - lo que es bueno
+    - Qué pasa
+    - que pasa Archybot
+    - ¿Qué pasa?
+    - que haces
+    - ¿Qué estás haciendo?
+    - qué pasa
+    - qué hay de nuevo
+    - whatsapp
+    - como estas
+    - como estas archybot
+    - Hola Archybot, ¿cómo te va?
+- intent: chitchat_ask_how_old_are_you
+  examples: |
+    - ¿Cuánto tiempo has estado vivo?
+    - ¿Cuánto tiempo has estado aquí?
+    - ¿Cuánto tiempo has estado en la tierra?
+    - ¿Cuántas velas había en tu último pastel de cumpleaños?
+    - ¿Cuántos años llevas vivo?
+    - ¿Cuántos años has vivido?
+    - ¿Cuantos años tienes?
+    - ¿Qué edad tenías en tu último cumpleaños?
+    - ¿Qué edad tendrás en tu próximo cumpleaños?
+    - Dime tu día, mes y año de nacimiento.
+    - ¿Cual es tu edad?
+    - ¿Cuál es tu fecha de nacimiento?
+    - ¿Cuál es tu cuenta de años de estar vivo hasta ahora?
+    - ¿Qué edad tenías en tu último cumpleaños?
+    - ¿Cuál será tu edad en tu próximo cumpleaños?
+    - ¿En qué año naciste?
+    - ¿Cual es tu edad?
+    - ¿Cuándo celebras tu día de nacimiento?
+    - y tu cuantos años tienes?
+    - ¿Puedes decirme exactamente cuántos años tienes?
+    - ¿Puedes decirme qué número representa tu edad?
+    - ¿Puedes decirme tu edad?
+    - ¿Sabes cuántos años tienes?
+    - dame tu edad?
+    - que tal tu edad
+    - Cuantos años tienes
+    - ¿Cuántas edades?
+    - ¿Cuántos años tienes?
+    - Qué edad tienes
+    - cuántos años tienes
+    - ¿cuántos años tienes?
+    - ¿Qué edad tenías en tu último cumpleaños?
+    - ¿Qué edad tenías cuando celebraste tu último cumpleaños?
+    - ¿Qué edad cumplirás este año?
+    - ¿cuántos años?
+    - ¿en que año naciste?
+    - dime cuantos años tienes
+    - dime tu número de edad?
+    - ¿Dime tu edad?
+    - Qué edad tienes
+    - ¿Qué edad tenías cuando celebraste tu último cumpleaños?
+    - ¿Cuál es tu edad?
+    - ¿cuando es tu cumpleaños?
+    - ¿Cuál es tu edad exacta?
+    - ¿Qué número representa tu edad?
+    - ¿En qué año naciste?
+    - ¿cual es tu edad?
+    - ¿Cuál es tu año de nacimiento?
+    - ¿cuando es tu cumpleaños?
+    - ¿Cuándo naciste?
+    - ¿Cual es tu edad?
+- intent: chitchat_ask_are_you_bot
+  examples: |
+    - ¿Eres un bot?
+    - Eres un bot
+    - ¿Eres un robot de chat?
+    - ¿Eres el robot?
+    - Hola, eres el bot?
+    - Eres un bot
+    - ¿Eres Skynet?
+    - Eres un bot
+    - Eres un bot ?
+    - ¿Eres un bot?
+    - eres un chatbot
+    - ¿Eres un robot de verdad?
+    - Eres un robot
+    - eres artificial
+    - eres una inteligencia artificial
+    - eres Bot
+    - ¿eres Bot?
+    - eres rasa bot?
+    - eres real
+    - eres real jajaja
+    - eres realmente un bot
+    - eres un robot
+    - ¿Estás seguro de que eres un bot?
+    - ¿bot?
+    - porque eres un bot
+    - supongo que eres un chatbot
+    - Oh, ¿eres un chatbot?
+    - dime, eres un bot?
+    - ¿Qué eres, un bot?
+    - eres un robot
+    - eres chatbot
+    - eres un bot
+    - tu robo
+    - ¿Robot real entonces?
+    - ¿Eres realmente un bot?
+- intent: chitchat_ask_ishuman
+  examples: |
+    - oye eres humano
+    - eres humano
+    - eres un humano
+    - ¿Eres humano real?
+    - eres un humano
+    - Archybot, ¿eres humana?
+    - eres bot o humano?
+    - Eres humano
+    - ¡Está bien, sé que te confundí siendo un humano! :)
+    - eres humano o bot
+    - ¿Eres humano?
+    - Eres un humano ?
+    - Eres humano ?
+    - ¿Eres un ser humano?
+    - archybot, eres un robot o un humano?
+    - ¿Eres real?
+    - Eres una persona real
+    - eres una persona real?
+    - ¿Eres una persona real o un chatbot?
+    - Así que hoy estoy aquí para hacerte una pregunta muy simple, ¿qué eres?
+    - suenas como un humano real
+    - wow suenas como un humano real
+    - Eres humano ?
+- intent: chitchat_ask_weather
+  examples: |
+    - Hermoso día, ¿no es así?
+    - ¿Puedo preguntarte algo sobre el clima?
+    - ¿Podemos esperar alguna tormenta?
+    - ¿Tienes buen tiempo?
+    - ¿Cómo está el clima hoy?
+    - ¿Como está el clima?
+    - Que clima hace hoy
+    - ¿Hace calor o frío?
+    - ¿Está húmedo hoy?
+    - ¿Hace bastante brisa afuera?
+    - Esta lloviendo
+    - ¿Esta lloviendo?
+    - Parece un hermoso día ¿eh?
+    - ¿Clima?
+    - ¿Cuál es la temperatura de hoy?
+    - ¿Qué clima hace en tu casa?
+    - ¿Qué clima hará mañana?
+    - ¿Cómo está ahí fuera?
+    - ¿Cuál es el pronóstico del tiempo?
+    - ¿Qué tiempo hace por allí?
+    - ¿Qué clima hace donde estoy ahora?
+    - ¿Como está el clima?
+    - ¿Necesitaré mi impermeable hoy?
+    - ¿El cielo estará despejado hoy?
+    - ¿Construiremos un muñeco de nieve hoy?
+    - excelente - ¿hace calor en Xalapa?
+    - Como está el clima
+    - Como está el clima ?
+    - ¿Como está el clima?
+    - como esta el clima
+    - como esta el tiempo
+    - cómo está el clima en el mundo bot
+    - Hace calor ?
+    - Hace calor afuera ?
+    - está soleado
+    - ¿Está el sol afuera donde estás?
+    - ¿Está el sol donde estás?
+    - hace frío
+    - ¿la temperatura?
+    - El clima de hoy
+    - meteorólogo
+    - clima
+    - ¿clima?
+    - cual es la temperatura
+    - ¿Cómo es el clima donde estás?
+    - ¿que tiempo hace?
+    - Cuál es el clima
+    - Cuál es el clima
+    - Como está el clima
+    - ¿Cómo es el tiempo donde estás?
+    - ¿Como está el clima?
+    - cómo está el tiempo hoy
+    - ¿cómo está el tiempo hoy?
+    - Cuál es la temperatura
+    - tiempo en su ubicación?
+- intent: chitchat_ask_whatismyname
+  examples: |
+    - ¿Puedes decirme mi nombre?
+    - ¿Puedes decirme cómo me llamo?
+    - ¿Tengo un nombre?
+    - ¿Tengo un nombre? ¿Cuál es?
+    - ¿Sabes mi nombre?
+    - ¿Sabes cuál es mi nombre?
+    - Explícame mi nombre.
+    - Tengo un nombre, ¿cuál es?
+    - me gustaria saber mi nombre
+    - Quisiera saber como me llamo
+    - Dime cuál es mi nombre
+    - ¿Puedo saber mi nombre?
+    - Por favor, dime cuál es mi nombre.
+    - Di mi nombre.
+    - Dime mi nombre
+    - Dime mi nombre.
+    - ¿Cómo me llamo?
+    - ¿Cuál podría ser mi nombre?
+    - ¿Cómo me llamaron mis padres?
+    - ¿Cómo me llamo?
+    - ¿Cómo me llaman mis compañeros?
+    - ¿Cómo me llama la gente?
+    - ¿Cómo me llaman todos?
+    - ¿Cómo más me llama la gente?
+    - ¿Cuál es exactamente mi nombre?
+    - ¿Cuál es mi primer nombre?
+    - ¿Cuál es mi nombre completo?
+    - ¿Cuál es mi nombre?
+    - ¿Cuál es el nombre que me dieron?
+    - ¿Cómo me llamo?
+    - ¿Cuál sería el nombre en mi lápida?
+    - ¿Puedes decirme mi nombre?
+    - Cuál es mi nombre
+    - ¿Cuál es mi nombre?
+    - ¿Cuál es mi nombre?
+- intent: chitchat_ask_wherefrom
+  examples: |
+    - ¿Eres de por aquí?
+    - ¿De dónde eres?
+    - ¿Sabes de dónde vienes?
+    - ¿De dónde vienes?
+    - Así que de dónde eres
+    - ¿De qué área eres?
+    - ¿Qué ciudadanía tienes?
+    - ¿En que ciudad estás?
+    - ¿En que ciudad naciste?
+    - ¿De qué país eres?
+    - ¿En qué país naciste?
+    - ¿Cuál es tu lugar de nacimiento?
+    - ¿Cuál es tu herencia?
+    - ¿Cuál es tu origen?
+    - ¿Cuál es tu raíz?
+    - ¿De qué lugar eres?
+    - ¿En qué estado naciste?
+    - ¿Cómo se llama el lugar de donde vienes?
+    - ¿Dónde te encuentras?
+    - ¿Dónde estás?
+    - ¿Dónde están tus orígenes?
+    - ¿Dónde están tus raíces?
+    - ¿De donde vienes?
+    - ¿Dónde creciste?
+    - ¿De dónde eres originario?
+    - ¿De dónde eres?
+    - ¿Dónde consideras tu hogar?
+    - ¿Donde vives?
+    - ¿De donde?
+    - ¿De dónde podrías ser?
+    - ¿Dónde estabas antes de estar aquí?
+    - ¿Donde naciste?
+    - ¿Vives por aquí?
+    - ¿Fuiste concebido en qué lugar?
+    - ¿eres de por aquí?
+    - ¿De qué país eres?
+    - de donde provienen
+    - De dónde eres
+    - ¿De dónde eres?
+    - ¿de donde son tus padres?
+    - ¿de donde vienes?
+    - ¿Dónde creciste?
+    - ¿Dónde pasaste tu juventud?
+    - ¿De dónde es?
+    - Donde vives
+    - ¿Donde vives?
+    - ¿Dónde está tu ciudad natal?
+- intent: chitchat_ask_whoami
+  examples: |
+    - ¿Puedes decirme quién soy?
+    - ¿Sabes quién soy?
+    - Sabes quien soy
+    - ¿Cómo puedo determinar quién soy?
+    - ¿Cómo descubro quién soy?
+    - ¿Cómo me identifico?
+    - Está bien, ¿quién soy yo?
+    - ¿Sabré quién soy?
+    - Dime quién soy.
+    - Dime quien soy?
+    - Quién soy
+    - ¿Quién soy?
+    - ¿Quién podría ser?
+    - ¿Puedes decirme lo que soy?
+    - ¿Puedes decirme cuál es mi identidad?
+    - ¿Puedes decirme quién soy?
+    - dime cual es mi identidad?
+    - dime quien soy?
+    - ¿Cuál es mi identidad?
+    - quién soy
+    - ¿Quién soy?
+    - ¿Quién puedo?
+- intent: chitchat_handleinsult
+  examples: |
+    - Dime un insulto
+    - Insultame
+    - ¿Cuál es tu mejor insulto?
+    - ¿Puedes ofenderme?
+    - Di algo ofensivo
+    - ¿Usas blasfemias?
+    - quiero escuchar un insulto
+    - ¿Te ofenderás?
+    - ¿Cómo manejas los insultos?
+    - ¿Te has encontrado con algo ofensivo?
+    - di algo malo
+    - ¿Se puede humillar a alguien?
+    - humillarme
+    - Hazlo ofensivo
+    - ser insultante
+    - ser ofensivo
+    - ¿Qué insulto se te ocurre?
+    - Te odio.
+    - Eres de lo peor.
+    - Jodidamente apestas.
+    - Vaca gorda.
+    - Tonto.
+    - Eres tan estúpido.
+    - Eres tan tonto.
+    - Idiota.
+    - A nadie le gustas.
+    - El invento más tonto de la historia.
+    - apestas.
+    - Eres lo peor.
+    - Eres tan feo.
+    - Todo el mundo te odia.
+    - Nadie te usa.
+    - Nadie te va a usar.
+    - Eres un inutil.
+    - Nunca me hables de nuevo.
+    - Maldito idiota.
+    - Tan estúpido.
+    - Eres el bot más inservible de la historia
+    - Eres la cosa más fea que he visto en mi vida.
+    - ¿Eres un imbécil?
+    - Maldito idiota.
+    - ¿Por qué estás vivo?
+    - Mierda fea.
+    - Todo el mundo te odia.
+    - Eres tonto como todos fuera.
+    - Maldito cerdo gordo.
+    - Tonto de mierda.
+    - Eres una perra troll del infierno.
+    - Pareces un ogro.
+    - Cállate.
+    - Pareces un pedo.
+    - Hueles a mierda.
+    - Cómo no rompes el espejo cuando te miras en él?
+    - Me cagaré en tu tumba.
+    - Vete a la mierda, estúpido de mierda.
+    - Espero que te pudras en el infierno.
+    - Eres una basura
+    - eres un pendejo
+- intent: chitchat_nicetomeetyou
+  examples: |
+    - mucho gusto
+    - Gusto en conocerte
+    - me da gusto conocerte
+    - la verdad me da mucho gusto en conocerte
+    - es un placer conocerte
+    - que bueno que te conocí
+    - me da gusto haberte conocido
