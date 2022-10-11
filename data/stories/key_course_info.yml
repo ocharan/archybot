@@ -1,0 +1,19 @@
+version: "3.0"
+
+stories:
+- story: Unidad de competencia
+  steps:
+  - intent: key_info_competency_unit
+  - action: utter_key_info_competency_unit
+- story: Referencias del curso
+  steps:
+  - intent: key_info_references
+  - action: utter_key_info_references
+- story: Valores del curso
+  steps:
+  - intent: key_info_course_values
+  - action: utter_key_info_values
+- story: Sobre el proyecto final
+  steps:
+  - intent: key_info_project
+  - action: utter_key_info_project

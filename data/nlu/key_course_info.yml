@@ -1,0 +1,40 @@
+version: "3.0"
+
+nlu:
+- intent: key_info_competency_unit
+  examples: |
+    - ¿cuál es la unidad de competencia del curso?
+    - ¿Cuál es el objetivo del curso?
+    - ¿cuál es el objetivo del curso de diseño?
+    - Dime por favor la unidad de competencia
+    - ¿Qué aprenderé al final del curso?
+- intent: key_info_references
+  examples: |
+    - Me podrías decir las referencias del curso
+    - ¿Qué libros utilizaremos en el curso?
+    - Necesito la lista de libros a utilizaremos
+    - ¿Qué libros necesito leer?
+    - ¿Cuál es la bibliografía del curso?
+    - dime la bibliografía
+    - dime los libros a utilizar
+    - Me podrías decir las referencias del curso
+    - ¿Qué libros utilizaremos en el curso?
+- intent: key_info_course_values
+  examples: |
+    - ¿cuántos créditos da este curso?
+    - Me podrías dar información del curso
+    - dame información de la experiencia educativa
+    - Cuántos créditos me da esta experiencia educativa?
+    - ¿cómo me van a evaluar en el curso?
+    - ¿Cuáles son los criterios de evaluación?
+    - ¿Cuántas horas dura el curso?
+    - ¿cuántas oportunidades de evaluación tengo?
+- intent: key_info_project
+  examples: |
+    - ¿En qué consiste el proyecto del curso?
+    - De qué trata el proyecto final
+    - Cuál va a ser el proyecto final
+    - Cuántas personas formarán el equipo del proyecto final
+    - De cuántas personas puede ser el equipo para el proyecto
+    - Dime información sobre el proyecto final
+    - de qué va el proyecto

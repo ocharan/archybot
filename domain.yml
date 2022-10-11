@@ -4,7 +4,7 @@ config:
   store_entities_as_slots: true
 
 session_config:
-  session_expiration_time: 480 # value in minutes
+  session_expiration_time: 60 # value in minutes
   carry_over_slots_to_new_session: true
 
 intents:
@@ -28,6 +28,10 @@ intents:
   - chitchat_ask_whoami
   - chitchat_handleinsult
   - chitchat_nicetomeetyou
+  - key_info_competency_unit
+  - key_info_references
+  - key_info_course_values
+  - key_info_project
   - why_design
   - why_software_architecture
   - ask_designer_skills

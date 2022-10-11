@@ -1,0 +1,37 @@
+version: "3.0"
+
+responses:
+  utter_key_info_competency_unit:
+  - text: "El estudiante propone una solución arquitectónica y basada en componentes para el diseño de software empleando los formalismos y heurísticas correspondientes al diseño basado en componentes con creatividad, apertura, honestidad y tolerancia en un ambiente de colaboración y respeto con el fin apoyar las etapas subsecuentes del proceso de desarrollo de software."
+  utter_key_info_references:
+  - text: |
+      Las fuentes de información del curso son
+
+      Bass, L., Clements, P., y Kazman, R. (2021). Software Architecture in Practice (4th ed.). Addison-Wesley Professional.
+      Buschmann, F., Meunier, R., Rohnert, H., Sommerlad, P., & Stal, M. (1996). Pattern-oriented software architecture. John Wiley & Sons, Inc.
+      Cervantes, H., & Kazman, R. (2016). Designing Software Architectures. Addison-Wesley Professional.
+      Cheesman, J., & Daniels, J. (2000). UML components. Addison Wesley.
+      Clements, Bachmann, Bass, Garlan, Ivers, Little, Merson, Nord, y Stafford (2010). Documenting software architectures (2nd ed.). Addison-Wesley Educational.
+      Gomaa, H. (2011). Software Modeling and Design. Cambridge University Press.
+      Mitra, T. (2015). Practical Software Architecture. Pearson Educations.
+      Richards, M., y Ford, N. (2020). Fundamentals of Software Architecture. O'Reilly Media.
+  utter_key_info_values:
+  - text: |
+      Experiencia educativa - Diseño de Software
+      Créditos - 10
+      Horas - 6
+      Modalidad - Curso
+      Oportunidades de evaluación - Todas
+      Pre-requisitos - Principios de Diseño de Software
+      Evaluación del desempeño
+      * Examen
+      * Resolución de un caso práctico
+      * Prácticas, ejercicios, y Reportes de lectura
+  utter_key_info_project:
+  - text: |
+      El proyecto final busca que el estudiante:
+      - Diseñe vistas arquitectónicas 
+      - Especifique componentes
+      - Diseñe interfaces de usuario
+
+      Los equipos estarán conformados por parejas y, en el caso de que el número de estudiantes sea non, un trío.
