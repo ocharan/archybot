@@ -14,7 +14,6 @@ intents:
   - deny
   - react_positive
   - react_negative
-  - single_solution
   - how_to_get_started
   - thank
   - chitchat_ask_how_were_you_built
@@ -32,9 +31,14 @@ intents:
   - key_info_references
   - key_info_course_values
   - key_info_project
-  - why_design
+  - design_faq_software
+  - design_faq_soft_properties
+  - design_faq_why_design  
+  - design_faq_single_solution
+  - design_faq_ask_designer_skills
+  - design_faq_wicked
+  - design_faq_howdesign
   - why_software_architecture
-  - ask_designer_skills
   - ask_quality_attribute
   - ask_reference_architecture
   - ask_security_tactics
@@ -68,16 +72,6 @@ responses:
         Si no sabes qué hacer, puedes pedirme ayuda escribiendo Ayuda en el chat.
   utter_goodbye:
     - text: "Adiós :("
-  utter_react_negative:
-    - text: 😕
-    - text: 😞
-    - text: 😥
-    - text: 😢
-  utter_react_positive:
-    - text: 😄
-    - text: 😊
-    - text: 👏
-    - text: 😍
   utter_default:
     - text: "Lo siento, no entendí eso 🤷 ¿puedes reformular?"
     - text: No entendí 🤷 ¿podrías reformular eso?
@@ -86,7 +80,7 @@ responses:
     - text: No entendí bien eso 🤷 ¿podrías reformular tu mensaje?
     - text: ¿Podrías reformular su mensaje? No lo entendí, lo siento 🤷    
   utter_get_started:
-    - text: | 
+    - text: |
         Soy un asistente de profesor y te puedo ayudar en los siguientes temas:
 
         - Fundamentos de arquitectura de software
@@ -97,15 +91,10 @@ responses:
         - Documentación de una arquitectura de software
 
         ¿Qué te interesa?
-  utter_noworries:
-    - text: ¡No te preocupes! 🤙
-    - text: No hay problema 🤙
-    - text: Estoy feliz de ayudar 😎
-    - text: Aquí estaré para lo que necesites 😎
-  utter_anything_else:
-    - text: ¿Hay algo más en lo que pueda ayudarte?
-  utter_ask_more:
-    - text: ¿Te gustaría saber más?
+  utter_why_software_architecture:
+    - text: La arquitectura es un puente entre los objetivos de negocio de una organización y el sistema de software final.
+  utter_why_software_architecture_fairbanks:
+    - text: Es una arma para abordar la complejidad en los sistemas de software. Ayuda a particionar el software, proporciona conocimientos que ayudan a diseñarlo mejor y proporciona abstracciones que ayudan a razonar sobre el software.    
   utter_ask_quality_attribute:
     - text: |
         Es una dimensión de calidad utilizada para evaluar un sistema de software.
@@ -124,25 +113,6 @@ responses:
         - Rendimiento (Performance)
         - Seguridad (Security)
         - Usabilidad (Usability)
-  utter_why_design:
-    - text: Para producir una solución viable a un problema dado.
-  utter_why_software_architecture:
-    - text: La arquitectura es un puente entre los objetivos de negocio de una organización y el sistema de software final.
-  utter_why_software_architecture_fairbanks:
-    - text: Es una arma para abordar la complejidad en los sistemas de software. Ayuda a particionar el software, proporciona conocimientos que ayudan a diseñarlo mejor y proporciona abstracciones que ayudan a razonar sobre el software.
-  utter_single_solution:
-    - text: Rara vez... casi nunca 😬
-  utter_single_solution_why:
-    - text: |
-        Las razones por las que no existe UNA solución a la mayoría de los problemas son:
-        1. No existe una única medida de calidad.
-        2. Diferentes factores y restricciones que deben considerarse al elegir una solución.
-        3. Ningún proceso garantiza que podamos incluso identificar una solución aceptable.
-  utter_designer_skills:
-    - text: |
-        1. Familiaridad con el dominio de la aplicación.
-        2. Habilidad para comunicar la visión técnica a otros miembros del proyecto.
-        3. Identificación con el desempeño del proyecto. 
   utter_explain_reference_architecture:
     - text: Son modelos que proporcionan una estructura lógica general para un tipo particular de aplicación o dominio. Se mapean a uno o más patrones arquitectónicos. Se han probado en contextos técnicos y de negocio. Suelen venir con un conjunto de artefactos de apoyo que facilitan su uso.
   utter_security_tactics:

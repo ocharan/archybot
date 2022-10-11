@@ -1,0 +1,57 @@
+version: "3.0"
+
+stories:
+- story: why design
+  steps:
+  - intent: design_faq_why_design
+  - action: utter_design_faq_why_design  
+- story: single solution + why
+  steps:
+  - intent: design_faq_single_solution 
+  - action: utter_design_faq_single_solution
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_design_faq_single_solution_why
+  - intent: thank
+  - action: utter_noworries
+  - action: utter_anything_else  
+- story: single solution + not why
+  steps:
+  - intent: design_faq_single_solution 
+  - action: utter_design_faq_single_solution
+  - action: utter_ask_more
+  - intent: deny
+  - action: utter_noworries
+- story: designer skills
+  steps:
+  - intent: design_faq_ask_designer_skills
+  - action: utter_design_faq_designer_skills
+- story: software properties
+  steps:
+  - intent: design_faq_soft_properties
+  - action: utter_design_faq_soft_properties
+- story: software definition
+  steps:
+  - intent: design_faq_software
+  - action: utter_design_faq_software
+- story: Wicked problems
+  steps:
+  - intent: design_faq_wicked 
+  - action: utter_design_faq_wicked
+  - action: utter_ask_more
+  - intent: affirm
+  - action: utter_design_faq_wicked_properties
+  - intent: thank
+  - action: utter_noworries
+  - action: utter_anything_else  
+- story: Wicked problems + not more
+  steps:
+  - intent: design_faq_wicked 
+  - action: utter_design_faq_wicked
+  - action: utter_ask_more
+  - intent: deny
+  - action: utter_noworries
+- story: How design
+  steps:
+  - intent: design_faq_howdesign
+  - action: utter_design_faq_howdesign

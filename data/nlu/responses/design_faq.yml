@@ -1,0 +1,48 @@
+version: "3.0"
+
+responses:
+  utter_design_faq_software:
+  - text: |
+      Programas de computadora, procedimientos y la posible documentación asociada, así como los datos relacionados con la operación de un sistema de computadora. IEEE 828-2012
+
+      Nota: Incluye software ejecutable y no ejecutable, gráficas, grabaciones de audio y video, diccionarios, documentos y estructuras de información, y los registros de las bases de datos.
+  utter_design_faq_soft_properties:
+  - text: |
+      1. La complejidad
+      2. El problema de la conformidad
+      3. La facilidad (aparente) de cambio
+      4. La invisibilidad
+  utter_design_faq_why_design:
+    - text: Para producir una solución viable a un problema dado.
+  utter_design_faq_single_solution:
+    - text: Rara vez... casi nunca 😬
+  utter_design_faq_single_solution_why:
+    - text: |
+        Las razones por las que no existe UNA solución a la mayoría de los problemas son:
+
+        1. No existe una única medida de calidad.
+        2. Diferentes factores y restricciones que deben considerarse al elegir una solución.
+        3. Ningún proceso garantiza que podamos incluso identificar una solución aceptable.
+  utter_design_faq_designer_skills:
+    - text: |
+        1. Familiaridad con el dominio de la aplicación.
+        2. Habilidad para comunicar la visión técnica a otros miembros del proyecto.
+        3. Identificación con el desempeño del proyecto. 
+  utter_design_faq_wicked:
+    - text: "Un problema que es difícil o imposible de resolver, debido a requisitos incompletos, contradictorios y cambiantes que son difíciles de definir, identificar o reconocer. A menudo involucra a partes interesadas que tienen visiones del mundo radicalmente diferentes. Además, las interdependencias complejas hacen que el esfuerzo por resolver un aspecto de un problema perverso pueda revelar o crear nuevos problemas."
+  utter_design_faq_wicked_properties:
+    - text: "No hay una formulación definitiva de un problema perverso."
+    - text: "Los problemas perversos no tienen regla de parada."
+    - text: "Las soluciones a problemas perversos no son verdaderas o falsas, sino buenas o malas."
+    - text: "No existe una prueba inmediata ni final de una solución a un problema perverso."
+    - text: "Cada solución a un problema perverso es una 'operación de una sola vez', porque no hay oportunidad de aprender por ensayo y error, cada intento cuenta de manera significativa."
+    - text: "Los problemas perversos no tienen un conjunto enumerable (o exhaustivamente descriptible) de soluciones potenciales."
+    - text: "Cada problema perverso es esencialmente único."
+    - text: "Cada problema perverso puede considerarse como un síntoma de otro problema."
+  utter_design_faq_howdesign:
+    - text: |
+        1. Clarificar los requisitos.
+        2. Analizar las necesidades y construir un modelo de caja negra del sistema.
+        2. Postular una solución de diseño de caja blanca.
+        3. Validar la solución.
+        4. Implementar el plan de diseño.

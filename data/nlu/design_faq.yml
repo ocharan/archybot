@@ -1,0 +1,43 @@
+version: "3.0"
+
+nlu:
+- intent: design_faq_software
+  examples: |
+    - definición de software
+    - define software
+    - ¿Qué es el software?
+- intent: design_faq_soft_properties
+  examples: |
+    - propiedades del software
+    - que características tiene el software
+    - dime las propiedades del software que influyen en el desarrollo
+- intent: design_faq_why_design
+  examples: |
+    - ¿Por qué es importante diseñar?
+    - ¿Para qué diseñar software?
+    - Dime una razón para diseñar software
+    - ¿Por qué es útil saber de diseño de software?
+    - ¿Cuál es el propósito de diseñar?
+- intent: design_faq_single_solution
+  examples: |
+    - ¿Existe una sola solución a un problema?
+    - ¿Existe una sola solución a un problema de diseño?
+    - ¿Hay una única solución a un problema de diseño?
+- intent: design_faq_ask_designer_skills
+  examples: |
+    - ¿Qué características debe tener un diseñador excepcional?
+    - ¿Cuáles son las características debe tener un diseñador?
+    - ¿Qué es lo que caracteriza a un diseñador de software?
+    - Dime las características de un buen diseñador
+    - dime las caracteristicas de un buen diseñador de software
+- intent: design_faq_wicked
+  examples: |
+    - qué es un problema retorcido
+    - dime que es un wicked problem
+    - características de un problema retorcido
+    - definición de wicked problem
+- intent: design_faq_howdesign
+  examples: |
+    - cómo se diseña 
+    - cuál es el proceso de diseño
+    - dime los pasos para diseñar
