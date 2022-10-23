@@ -1,16 +1,6 @@
 version: "3.0"
 
 responses:
-  utter_react_negative:
-    - text: 😕
-    - text: 😞
-    - text: 😥
-    - text: 😢
-  utter_react_positive:
-    - text: 😄
-    - text: 😊
-    - text: 👏
-    - text: 😍
   utter_noworries:
     - text: ¡No te preocupes! 🤙
     - text: No hay problema 🤙

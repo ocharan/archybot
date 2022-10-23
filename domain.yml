@@ -12,8 +12,6 @@ intents:
   - goodbye
   - affirm
   - deny
-  - react_positive
-  - react_negative
   - how_to_get_started
   - thank
   - chitchat_ask_how_were_you_built

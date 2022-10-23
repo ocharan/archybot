@@ -9,14 +9,6 @@ stories:
   steps:
   - intent: goodbye
   - action: utter_goodbye
-- story: positive reaction
-  steps:
-  - intent: react_positive
-  - action: utter_react_positive
-- story: negative reaction
-  steps:
-  - intent: react_negative
-  - action: utter_react_negative
 - story: how to get started
   steps:
   - intent: how_to_get_started
