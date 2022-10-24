@@ -37,6 +37,10 @@ intents:
   - design_faq_wicked
   - design_faq_howdesign
   - why_software_architecture
+  - ask_design_concept
+  - ask_design_principle
+  - ask_design_tactic
+  - ask_deployment_pattern
   - ask_quality_attribute
   - ask_reference_architecture
   - ask_security_tactics
@@ -95,7 +99,7 @@ responses:
     - text: Es una arma para abordar la complejidad en los sistemas de software. Ayuda a particionar el software, proporciona conocimientos que ayudan a diseñarlo mejor y proporciona abstracciones que ayudan a razonar sobre el software.    
   utter_ask_quality_attribute:
     - text: |
-        Es una dimensión de calidad utilizada para evaluar un sistema de software.
+        Un atributo de calidad es una dimensión de calidad utilizada para evaluar un sistema de software. 
         Es una propiedad medible o comprobable de un sistema que se utiliza para indicar qué tan bien el sistema satisface las necesidades de los interesados más allá de la función básica del sistema.
   utter_quality_attribute_list:
     - text: |

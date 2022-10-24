@@ -111,13 +111,42 @@ nlu:
     - Describe que es un atributo de calidad
     - Explica que es un atributo de calidad
     - Aclara que es un atributo de calidad
+    - ejemplo de atributo de calidad
+- intent: ask_design_concept
+  examples: |
+    - ¿Qué es un concepto de diseño?
+    - Define que es un concepto de diseño
+    - Dime qué es un concepto de diseño
+    - describe lo que es un concepto de diseño
+    - dime ejemplos de conceptos de diseño
+    - ejemplo de concepto de diseño
+- intent: ask_design_principle
+    - me podrías dar un ejemplo de principio de diseño
+    - ejemplo de principio de diseño
+    - dame un principio de diseño
+    - describe un principio de diseño
 - intent: ask_reference_architecture
   examples: |
     - ¿Qué es una arquitectura de referencia?
-    - ¿Para que sirve una arquitectura de referencia?
+    - ¿Para qué sirve una arquitectura de referencia?
     - Dime que es una arquitectura de referencia
     - ¿Cuál es la utilidad de una arquitctura de referencia?
     - Explica que es una arquitectura de referencia
+    - ejemplo de arquitectura de referencia
+- intent: ask_deployment_pattern
+  examples: |
+    - ¿Qué es un patrón de despliegue?
+    - explica lo que es un patrón de displiegue
+    - Dime cuál es la utilidad de un patrón de displiegue
+    - ¿Por qué se necesita un patrón de despliegue?
+    - ejemplo de patrón de despliegue
+- intent: ask_design_tactic
+  examples: |
+    - ¿Qué es una táctica de diseño?
+    - define una táctica
+    - Para qué sirve una táctica de diseño?
+    - utilidad de una táctica
+    - por qué necesito una táctica diseño
 - intent: ask_security_tactics
   examples: |
     - ¿Cómo puedo detectar ataques?
