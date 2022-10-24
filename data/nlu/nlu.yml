@@ -121,6 +121,7 @@ nlu:
     - dime ejemplos de conceptos de diseño
     - ejemplo de concepto de diseño
 - intent: ask_design_principle
+  examples: |
     - me podrías dar un ejemplo de principio de diseño
     - ejemplo de principio de diseño
     - dame un principio de diseño
@@ -159,7 +160,6 @@ nlu:
     - ¿Qué tipo de tácticas se puedan usar para la usabilidad?
     - Dime los tipos de tácticas para usabilidad
     - ¿Cómo se clasifican las tácticas de usabilidad?
-
 - synonym: Patrón arquitectónico
   examples: |
     - Estilo arquitectónico

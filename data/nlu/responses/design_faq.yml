@@ -46,24 +46,3 @@ responses:
         2. Postular una solución de diseño de caja blanca.
         3. Validar la solución.
         4. Implementar el plan de diseño.
-  utter_design_concept:
-    - text: |
-        Los Conceptos de Diseño son realizaciones reutilizables de los enfoques (abstractos) de diseño que se utilizan como bloques 
-        de construcción de las estructuras que component a las arquitecturas. Ejemplos de conceptos de diseño son:
-        - Arquitectuas de referencia
-        - Patrones de diseño arquitectónico
-        - Patrones de despliegue
-        - Tácticas
-        - Componentes desarrollados externamente
-  utter_deployment_pattern:
-    - text: "Son un modelo sobre como estructurar físicamente un sistema para su despliegue. Son importantes para definir una estructura física inicial del sistema en términos de niveles (nodos físicos) para satisfacer ciertos atributos de calidad."
-  utter_design_tactic:
-    - text: |
-        Las Tácticas de Diseño son primitivas de diseño fundamentales que el arquitecto utilizan para influir en la respuesta 
-        del sistema en un atributo de calidad. Estas técnicas de diseño fundamentales se han descubierto y utilizado durante 
-        años para que el sistema que se esté diseñando tenga las características deseadas.
-  utter_design_principle:
-    - text: "Para lograr una alta modoficabilidad debe de existir una buena modularidad, es decir, alta cohesión y bajo acoplamiento."
-    - text: "Para alcanzar una alta disponibilidad hay que evitar tener un único punto de falla."
-    - text: "Para alcanzar seguridad se pueden limitar los puntos de acceso a recursos críticos."
-    - text: "Para tener una buena facilidad de prueba se debe externalizar el estado del sistema de software."
