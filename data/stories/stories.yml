@@ -41,11 +41,11 @@ stories:
   steps:
   - intent: ask_design_concept
   - action: utter_design_concept
-- story:
+- story: design principles
   steps:
   - intent: ask_design_principle
   - action: utter_design_principle
-- story:
+- story: design tactics
   steps:
   - intent: ask_design_tactic
   - action: utter_design_tactic
