@@ -33,15 +33,11 @@ stories:
   - intent: thank
   - action: utter_noworries
   - action: utter_anything_else
-- story: design_concept
-  steps:
-  - intent: ask_reference_architecture
-  - action: utter_design_concept
-- story: ask_design_concept
+- story: ask design_concept
   steps:
   - intent: ask_design_concept
   - action: utter_design_concept
-- story: design principles
+- story: ask design principles
   steps:
   - intent: ask_design_principle
   - action: utter_design_principle
@@ -49,7 +45,7 @@ stories:
   steps:
   - intent: ask_design_tactic
   - action: utter_design_tactic
-- story: deployment_pattern
+- story: ask deployment pattern
   steps:
   - intent: ask_deployment_pattern
   - action: utter_deployment_pattern
