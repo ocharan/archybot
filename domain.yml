@@ -37,11 +37,15 @@ intents:
   - design_faq_wicked
   - design_faq_howdesign
   - why_software_architecture
+  - ask_software_architecture_definition
   - ask_design_concept
   - ask_design_principle
+  - ask_design_pattern
   - ask_design_tactic
   - ask_deployment_pattern
   - ask_quality_attribute
+  - ask_quality_attribute_scenario
+  - ask_functionality
   - ask_reference_architecture
   - ask_security_tactics
   - ask_usability_tactics
@@ -97,10 +101,16 @@ responses:
     - text: La arquitectura es un puente entre los objetivos de negocio de una organización y el sistema de software final.
   utter_why_software_architecture_fairbanks:
     - text: Es una arma para abordar la complejidad en los sistemas de software. Ayuda a particionar el software, proporciona conocimientos que ayudan a diseñarlo mejor y proporciona abstracciones que ayudan a razonar sobre el software.    
+  utter_ask_software_architecture_definition:
+    - text: 
   utter_ask_quality_attribute:
     - text: |
-        Un atributo de calidad es una dimensión de calidad utilizada para evaluar un sistema de software. 
-        Es una propiedad medible o comprobable de un sistema que se utiliza para indicar qué tan bien el sistema satisface las necesidades de los interesados más allá de la función básica del sistema.
+        Un atributo de calidad es una dimensión de calidad utilizada para evaluar un sistema de software. Es una propiedad medible 
+        o comprobable de un sistema que se utiliza para indicar qué tan bien el sistema satisface las necesidades de los interesados 
+        más allá de la función básica del sistema.
+
+        La forma más simple de clasificarlos es entre aquellos que describen alguna propiedad del sistema en tiempo de ejecución 
+        (ej. disponibilidad) y aquellos que describen alguna propiedad en tiempo de desarrollo del sistema como modificabilidad (ej. modificabilidad).
   utter_quality_attribute_list:
     - text: |
         Existe una gran variedad. Los más se repiten en la práctica son: 
@@ -115,6 +125,11 @@ responses:
         - Rendimiento (Performance)
         - Seguridad (Security)
         - Usabilidad (Usability)
+  utter_functionality:
+    - text: |
+        Se puede definir Funcionalidad como la capacidad del sistema de realizar el trabajo para el que fue diseñado. 
+        La funcionalidad no determina la arquitectura de un sistema de software. Revisa tus requisitos de calidad y 
+        restricciones para eso.
   utter_design_concept:
     - text: |
         Los Conceptos de Diseño son realizaciones reutilizables de los enfoques (abstractos) de diseño que se utilizan como bloques 
@@ -126,16 +141,37 @@ responses:
         - Componentes desarrollados externamente
   utter_deployment_pattern:
     - text: "Son un modelo sobre como estructurar físicamente un sistema para su despliegue. Son importantes para definir una estructura física inicial del sistema en términos de niveles (nodos físicos) para satisfacer ciertos atributos de calidad."
-  utter_design_tactic:
-    - text: |
-        Las Tácticas de Diseño son primitivas de diseño fundamentales que el arquitecto utilizan para influir en la respuesta 
-        del sistema en un atributo de calidad. Estas técnicas de diseño fundamentales se han descubierto y utilizado durante 
-        años para que el sistema que se esté diseñando tenga las características deseadas.
   utter_design_principle:
     - text: "Para lograr una alta modoficabilidad debe de existir una buena modularidad, es decir, alta cohesión y bajo acoplamiento."
     - text: "Para alcanzar una alta disponibilidad hay que evitar tener un único punto de falla."
     - text: "Para alcanzar seguridad se pueden limitar los puntos de acceso a recursos críticos."
     - text: "Para tener una buena facilidad de prueba se debe externalizar el estado del sistema de software." 
+  utter_quality_attribute_scenario:
+    - text: |
+        Un escenario de atributo de calidad describen la respuesta del sistema a algún estímulo y se utilizan para describir un requisito de atributo de calidad. 
+        Los escenarios son hipótesis comprobables sobre el comportamiento de los atributos de calidad del sistema.
+        Su definición consta de seis partes:
+
+        1. Estímulo: Un evento que recibe el sistema.
+        2. Fuente del estímulo: Entidad que genera el estímulo (humano, sistema de cómputo, actuador, etc.).
+        3. Ambiente: Condiciones en las que ocurre el estímulo. 
+        4. Artfacto: Parte o todo el sistema que recibe el estímulo.
+        5. Respuesta: La actividad que se realiza tras la llegada de un estímulo.
+        6. Medida de respuesta: Forma en la que se mide la respuesta para probar que el requisito se ha satisfecho.
+
+        Recuerdo que para satisfacer los requisitos de calidad que se describen en los escenarios se utilizan patrones y tácticas.
+  utter_design_pattern:
+    - text: |
+        Un patrón arquitectónico describe un problema de diseño recurrente que surge en un contexto en particular y nos presenta una solución probada por la experiencia. 
+        
+        En la solución que proporciona el patrón se definen elementos, sus responsabilidades y relaciones, además de la manera en la que éstos colaboran.
+
+        Los patrones arquitectónicos tienen una gran influencia en los atributos de calidad ya que comprenden múltiples decisiones y tácticas de diseño.
+  utter_design_tactic:
+    - text: |
+        Las Tácticas de Diseño son primitivas de diseño fundamentales que el arquitecto utilizan para influir en la respuesta 
+        del sistema en un atributo de calidad. Estas técnicas de diseño fundamentales se han descubierto y utilizado durante 
+        años para que el sistema que se esté diseñando tenga las características deseadas.
   utter_explain_reference_architecture:
     - text: Son modelos que proporcionan una estructura lógica general para un tipo particular de aplicación o dominio. Se mapean a uno o más patrones arquitectónicos. Se han probado en contextos técnicos y de negocio. Suelen venir con un conjunto de artefactos de apoyo que facilitan su uso.
   utter_security_tactics:

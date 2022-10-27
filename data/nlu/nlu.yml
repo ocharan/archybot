@@ -103,6 +103,13 @@ nlu:
     - Dame una razón para estudiar las arquitecturas de software
     - ¿Por qué es útil saber de arquitecturas de software?
     - ¿Cuál es el propósito de una arquitectura de software?
+- intent: ask_software_architecture_definition
+  examples: |
+    - qué es una arquitectura
+    - definición de arquitectura de software
+    - define arquitectura
+    - define arquitectura de software
+    - que es una arquitectura de software
 - intent: ask_quality_attribute
   examples: |
     - ¿Qué es un atributo de calidad?
@@ -112,6 +119,12 @@ nlu:
     - Explica que es un atributo de calidad
     - Aclara que es un atributo de calidad
     - ejemplo de atributo de calidad
+- intent: ask_functionality
+  examples: |
+    - qué es la funcionalidad
+    - define funcionalidad
+    - dame una definición de funcionalidad
+    - ejemplo de funcionalidad
 - intent: ask_design_concept
   examples: |
     - ¿Qué es un concepto de diseño?
@@ -141,6 +154,18 @@ nlu:
     - Dime cuál es la utilidad de un patrón de displiegue
     - ¿Por qué se necesita un patrón de despliegue?
     - ejemplo de patrón de despliegue
+- intent: ask_quality_attribute_scenario
+  examples: |
+    - ¿Qué es un escenario de atributo de calidad?
+    - Define escenario de atributo de calidad
+    - dame un escenario
+    - cuales son los elementos de un escenario de atributo de calidad
+- intent: ask_design_pattern
+  examples: |
+    - ¿Qué es un patrón de diseño arquitectónico?
+    - dime que es un patrón de diseño
+    - define patrón de diseño
+    - qué es un patrón arquitectónico
 - intent: ask_design_tactic
   examples: |
     - ¿Qué es una táctica de diseño?

@@ -23,6 +23,10 @@ stories:
   - intent: thank
   - action: utter_noworries
   - action: utter_anything_else  
+- story: software_architecture_definition
+  steps:
+  - intent: ask_software_architecture_definition
+  - action: utter_ask_software_architecture_definition
 - story: quality attribute
   steps:
   - intent: ask_quality_attribute
@@ -33,6 +37,10 @@ stories:
   - intent: thank
   - action: utter_noworries
   - action: utter_anything_else
+- story: ask for functionality
+  steps:
+  - intent: ask_functionality
+  - action: utter_functionality
 - story: ask design_concept
   steps:
   - intent: ask_design_concept
@@ -41,6 +49,14 @@ stories:
   steps:
   - intent: ask_design_principle
   - action: utter_design_principle
+- story: ask quality scenario
+  steps:
+  - intent: ask_quality_attribute_scenario
+  - action: utter_quality_attribute_scenario
+- story: ask_design_pattern
+  steps:
+  - intent: ask_design_pattern
+  - action: utter_design_pattern
 - story: design tactics
   steps:
   - intent: ask_design_tactic
